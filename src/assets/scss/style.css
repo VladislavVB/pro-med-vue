@@ -6,9 +6,7 @@
   font-size: 18px;
   color: #1c1c1c;
 }
-body::-webkit-scrollbar {
-  width: 0;
-}
+
 .custom__container {
   margin: auto;
   padding-top: 64px;
