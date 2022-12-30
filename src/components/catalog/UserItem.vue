@@ -11,10 +11,15 @@
     <LoaderVue v-if="loading" />
     <ErrorsVue v-else-if="errorServer" />
     <ul
+      v-else
       :class="{ active: activeButton }"
       class="catalog__line-body catalog__line-level-one-body"
     >
-      <UserAlbumVue :album="album" v-for="album in userAlbums" :key="album" />
+      <UserAlbumVue
+        v-for="album in userAlbums"
+        :key="album.id"
+        :album="album"
+      />
     </ul>
   </li>
 </template>

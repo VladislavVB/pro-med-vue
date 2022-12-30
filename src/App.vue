@@ -3,16 +3,19 @@
     <div class="custom__container">
       <NavbarVue :links="navbarLinks"/>
       <router-view />
+      <ModalPhotoVue/>
     </div>
   </div>
 </template>
 
 <script>
 import NavbarVue from './components/Navbar.vue';
+import ModalPhotoVue from './components/ModalPhoto.vue';
 export default {
   name: "App",
   components: {
-    NavbarVue
+    NavbarVue,
+    ModalPhotoVue
   },
   data() {
     return {
@@ -22,6 +25,7 @@ export default {
       ],
     };
   },
+ 
 };
 </script>
 

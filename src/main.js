@@ -4,13 +4,14 @@ import router from "./router";
 
 import "./assets/scss/reset.css";
 import "./assets/scss/style.css";
-import "./assets/scss/catalog.css";
 import "./assets/scss/favorit.css";
+import "./assets/scss/catalog.css";
 import "./assets/scss/modal.css";
 import "./assets/scss/mobile576.css";
 
 Vue.config.productionTip = false;
 
+export const bus = new Vue()
 
 new Vue({
   router,
